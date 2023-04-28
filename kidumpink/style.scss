@@ -1,0 +1,24 @@
+
+ * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Heebo', sans-serif;
+ }
+
+ $primary-color:#FFFFFF;
+ $secondary-color:#D31C75;
+ 
+ @mixin getflex ($direction,$justify,$align,$gap){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    gap : $gap;
+ }
+
+body {
+background-image: url(/imag/pink\,jpg.jpg);
+background-repeat:no-repeat;
+background-size: cover;
+}
+

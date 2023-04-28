@@ -1,0 +1,395 @@
+* {
+    font-family: 'Assistant', sans-serif;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+p {
+
+    margin: 0;
+    padding: 0;
+
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+
+
+.st {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+}
+
+.conteiner1 {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    background-color: white(125, 20, 20);
+    position: relative;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.27);
+    z-index: 1;
+}
+
+@media screen and (max-width: 420px){
+    .conteiner1 ul {
+justify-content: flex-start;
+margin-right: 0;
+padding: 0;
+    }
+    .profile {
+        padding-right: 20px;
+        ;
+    }
+    
+}
+
+
+
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.profile img {
+    border-radius: 50px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1rem;
+}
+
+.profile p {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.conteiner2 {
+    background-color: #b4f3f8;
+    position: relative;
+}
+
+
+.child2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-height: 15rem;
+}
+
+.conteiner2::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: block;
+    background-image: url(imag/point.jpeg);
+    background-position: center;
+    background-size: cover;
+    opacity: 0.6;
+    top: 0px;
+    left: 0px;
+}
+
+.per {
+    text-align: center;
+}
+
+
+@media screen and (max-width: 768px) {
+    .child2 .per {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid #0000002b;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.17);
+}
+
+@media screen and (max-width: 768px) {
+    .icon {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 1080px) and (min-width: 768px) {
+    .icon {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .icon {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+
+
+.sec1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.art1 {
+    display: flex;
+    margin: 35px 0px;
+    width: 800px;
+    gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .art1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info {
+        line-height: 2.5;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info p {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+.art2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2e2e2e;
+    color: white;
+    min-height: 200px;
+    gap: 250px;
+}
+
+.art2 img {
+    rotate: -16deg;
+}
+
+button {
+    background-color: #1addef;
+    padding: 5px 15px;
+    border-radius: 30px;
+    border: 1px solid #2e2e2e;
+    margin-top: 25px;
+}
+
+@media screen and (max-width: 768px) {
+    .art2 {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 10px;
+        padding: 10px;
+        text-align: center;
+
+    }
+
+    .ya {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+.sec3 {
+    background-color: rgb(227, 222, 222);
+}
+
+.grid1 {
+
+    background-color: white;
+    width: 15rem;
+    min-height: 20rem;
+    border-radius: 10px;
+}
+
+.grid1 img {
+
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding-bottom: 1.5rem;
+}
+
+
+.bigbox {
+
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+
+    width: 10rem;
+    height: 100%;
+    text-align: center;
+}
+
+.box button {
+    margin-bottom: 2rem;
+}
+
+
+.gridco {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding-bottom: 5rem;
+}
+
+.sec3 h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    padding-top: 4rem;
+}
+
+@media screen and (max-width: 768px) {
+    .gridco {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.wrapper-footer {
+    background-color: #b4f3f8;
+    position: relative;
+   
+}
+
+.wrapper-footer::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: block;
+    background-image: url(imag/point.jpeg);
+    background-position: center;
+    background-size: cover;
+    opacity: 0.6;
+    top: 0px;
+    left: 0px;
+}
+
+
+.wrapper-footer{
+    padding: 26px;
+}
+
+.footer-header{
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.form-control{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.wrapper-footer .button {
+    position: relative;
+    border-radius: 0;
+    font-weight: 600;
+    border: none;
+}
+
+@media screen  and (min-width: 790px) and (max-width: 1200px){
+   .wrapper-f {
+    max-width: 600px;
+  
+   } 
+}
+
+@media  screen and (min-width: 1201px) {
+    .wrapper-f {
+        max-width: 600px;
+        padding-right: 400px;
+    }
+    
+}
+
+.ico {
+    background-color: #2e2e2e;
+    min-height: 10rem;
+}
+
+.ico2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10rem;
+    gap: 6rem;
+}
+
+.ic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    color: white;
+}
+
+@media screen and (max-width: 1090px) {
+    .ico2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem;
+    }
+}
+@media screen and (max-width: 330px) {
+    .ico2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem;
+        margin-left: 2rem;
+
+    }
+}
