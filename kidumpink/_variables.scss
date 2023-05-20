@@ -1,0 +1,13 @@
+$primary-color:#FFFFFF;
+$secondary-color:#D31C75;
+$third-color:#1a1a1ad4 ;
+$fourth-color:#00000029;
+$ff-primary:'Heebo', sans-serif;
+
+@mixin getflex ($direction,$justify,$align,$gap){
+   display: flex;
+   flex-direction: $direction;
+   justify-content: $justify;
+   align-items: $align;
+   gap : $gap;
+}

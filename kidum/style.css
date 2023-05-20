@@ -8,7 +8,7 @@ body , html , h1 , p {
 }
 
 .title {
-    background-image: url(../imag/Path\ 15.jpg);
+    background-image: url(/kidum/img/Path\ 15.jpg);
     color: white;
     min-height: 705px;
     background-position: center;

@@ -1,24 +1,57 @@
+@use "variables" as * ;
 
- * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Heebo', sans-serif;
- }
 
- $primary-color:#FFFFFF;
- $secondary-color:#D31C75;
- 
- @mixin getflex ($direction,$justify,$align,$gap){
-    display: flex;
-    flex-direction: $direction;
-    justify-content: $justify;
-    align-items: $align;
-    gap : $gap;
- }
+html , body{
+margin: 0;
+padding: 0;
+font-family:$ff-primary;
+height: 50%;
+
+}
 
 body {
-background-image: url(/imag/pink\,jpg.jpg);
-background-repeat:no-repeat;
-background-size: cover;
+   background-image: url(/kidumpink/img/pink.jpg.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   
+
+
+   
+
+}
+
+.conteiner {
+   background-color: $third-color;
+   color: $primary-color;
+   position: absolute;
+   top: 30%;
+   right: 15%;
+   padding:30px;
+   padding-bottom: 70px;
+}
+.child {
+   @include getflex (column,center,center,15px);
+   text-align: end;
+}
+
+input {
+   @include getflex (column,center,center,15px);
+   width: 270px;
+   height: 30px;
+}
+
+button {
+   background-color: $secondary-color;
+   color: $primary-color;
+   border: none;
+   padding: 6px 35px 6px 35px;
+}
+
+@media (max-width: 430px) {
+   .conteiner {
+      right: 0%;
+      padding: 10%;
+   }
+   
 }
 
